@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Rupert Bot Analytics</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Rupert Bot
+                    </a>
+                </li>
+                <li>
+                    <a id="chart_pie" href="#">Pie Chart</a>
+                </li>
+                <li>
+                    <a id="chart_bar" href="#">Bar graph</a>
+                </li>
+                <li>
+                    <a id="chart_line" href="#">Line chart</a>
+                </li>
+                <li>
+                    <a id="chart_sentiment" href="#">Sentiment graph</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <h3>User Analytics</h3>
+            
+                <div id="chart-container">              
+                    <div class="dropdown" style="padding-left:20px; padding-right:40px; float:right" >
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            BOT
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="padding-left:20px">
+                            <li><a id="dropdown_botid_SG1" href="#">SG1</a></li>
+                            <li><a id="dropdown_botid_SG2" href="#">SG2</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown" style="padding-left:20px; float:right" >
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Timeframe
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="padding-left:20px">
+                            <li><a id="dropdown_1day" href="#">Last 1 day</a></li>
+                            <li><a id="dropdown_1week" href="#">Last week</a></li>
+                            <li><a id="dropdown_1month" href="#">Last 1 month</a></li> 
+                            <li><a id="dropdown_6months" href="#">Last 6 months</a></li>
+                        </ul>
+                    </div>
+
+                    <canvas id="mycanvas"></canvas>            
+                </div>
+            </div>
+            
+
+        </div>
+        <!-- /#page-content-wrapper -->
+        
+
+    </div>
+    <!-- /#wrapper -->
+
+    
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- javascript -->    
+    <script type="text/javascript" src="js/Chart.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
